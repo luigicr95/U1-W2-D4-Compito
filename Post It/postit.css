@@ -1,0 +1,123 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  position: relative;
+  /* display: grid;
+  gap: 50px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 150px 150px;*/
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  font-size: 2rem;
+  background-color: yellowgreen;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1,
+.box3,
+.box5,
+.box6,
+.box7 {
+  transform: rotate(-10deg);
+}
+
+.box2,
+.box4,
+.box8 {
+  transform: rotate(10deg);
+}
+
+.box:hover {
+  animation-name: select;
+  animation-duration: 0.5s;
+}
+.box2,
+.box4,
+.box8:hover {
+  animation-name: select-2;
+  animation-duration: 0.5s;
+}
+
+@keyframes select {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(0deg);
+    scale: 1.5;
+    z-index: 10;
+  }
+}
+@keyframes select-2 {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(0deg);
+    scale: 1.5;
+    z-index: 10;
+  }
+}
+
+/*.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.box3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.box4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.box5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+
+.box6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.box7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+
+.box8 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}*/
